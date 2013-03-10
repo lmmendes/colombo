@@ -30,5 +30,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "turn"
   s.add_development_dependency "rake"
 
+  s.signing_key = ENV['RUBYGEMS_PRIVATE_GEM_KEY']
+  s.cert_chain  = ['gem-public_cert.pem']
 
 end
