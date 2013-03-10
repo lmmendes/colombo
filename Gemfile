@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in digitalocean.gemspec
+# Specify your gem's dependencies in colombo.gemspec
 gemspec
