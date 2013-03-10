@@ -6,9 +6,9 @@ describe 'Colombo' do
 
   before do
 
-    Columbus.reset
+    Colombo.reset
 
-    Columbus.configure do |c|
+    Colombo.configure do |c|
       c.api_key   = ENV['DO_API_KEY']
       c.client_id = ENV['DO_CLIENT_ID']
     end
@@ -16,7 +16,7 @@ describe 'Colombo' do
   end
 
   it 'should have a version' do
-    Columbus::VERSION.wont_be_nil
+    Colombo::VERSION.wont_be_nil
   end
 
 end
