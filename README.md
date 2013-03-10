@@ -128,5 +128,5 @@ ssh_key.destroy
 
 ## License
 
-Columbus is free software distributed under the terms of the MIT license reproduced [here](http://opensource.org/licenses/mit-license.html).
+Colombo is free software distributed under the terms of the MIT license reproduced [here](http://opensource.org/licenses/mit-license.html).
 
