@@ -2,4 +2,4 @@
 .bundle
 Gemfile.lock
 pkg/*
-test/columbus/fixtures
+test/colombo/fixtures
