@@ -17,7 +17,7 @@ module Colombo
     end
 
     def droplets
-      Droplets.new(self)
+      Droplet.new(self)
     end
 
     def regions

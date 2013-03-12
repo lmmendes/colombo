@@ -21,9 +21,9 @@ describe 'Droplets' do
   end
 
 
-  it 'list droplets' do
-    VCR.use_cassette('droplets') do
-      @do.droplets.must_be_instance_of(Colombo::Droplets)
+  it 'get droplets list' do
+    VCR.use_cassette('get_droplets_list') do
+      @do.droplets.all.each{|x| x.must_be_instance_of(Colombo::Droplet)}
     end
   end
 
@@ -40,7 +40,7 @@ describe 'Droplets' do
 
   it 'find droplet' do
     VCR.use_cassette('droplets_find') do
-      # Colombo.new.droplets.find(1)
+      @do.droplets.find(20526)
     end
   end
 
