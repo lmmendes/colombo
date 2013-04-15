@@ -3,19 +3,15 @@
 require "colombo/size"
 
 module Colombo
-  class Sizes < Array
+  class Sizes < Container
 
     def initialize(client)
       @client = client
       @client.request(:get, '/sizes/', {}) do |response|
          response['sizes'].each do |size|
-            self << Size.new(@client, self, size)
+            self << Size.new(@client, size)
          end
       end
-    end
-
-    def find(size_id)
-      self.select{ |s| s.id == size_id }.first
     end
 
   end

@@ -3,13 +3,13 @@
 require "colombo/droplet"
 
 module Colombo
-  class Droplets < Array
+  class Droplets < Container
 
     def initialize(client)
       @client = client
       @client.request(:get, '/droplets/', {}) do |response|
          response['droplets'].each do |droplet|
-            self << Droplet.new(@client, self, droplet)
+            self << Droplet.new(@client, droplet)
          end
       end
     end
@@ -28,20 +28,6 @@ module Colombo
         puts response
       end
 
-    end
-
-    def find(droplet_id)
-
-      droplet = self.select{ |d| d.id == droplet_id }.first
-
-      return droplet if not droplet.nil?
-
-      response = @client.request(:get, "/droplets/#{droplet_id}") do |response|
-        droplet = Droplet.new(@client, self, response['droplet'])
-        self << droplet
-      end
-
-      return droplet
     end
 
   end

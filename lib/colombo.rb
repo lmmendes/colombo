@@ -8,6 +8,8 @@ require 'rest-client'
 require "colombo/version"
 require "colombo/configuration"
 require "colombo/request"
+require "colombo/container"
+require "colombo/resource"
 require "colombo/droplet"
 require "colombo/droplets"
 require "colombo/region"

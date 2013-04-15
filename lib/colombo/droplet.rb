@@ -1,19 +1,10 @@
 # encoding: utf-8
 
 module Colombo
-  class Droplet
+  class Droplet < Resource
 
     attr_accessor :id, :name, :image_id, :size_id, :region_id
     attr_accessor :backups_active, :ip_address, :status
-
-    def initialize(client, droplets, droplet_hash)
-      @client   = client
-      if droplet_hash
-        droplet_hash.each do |key, value|
-          __send__("#{key}=", value) if self.respond_to?( key.to_sym )
-        end
-      end
-    end
 
     def reboot
       @client.request(:get, "/droplets/#{self.id}/reboot/") do |response|
