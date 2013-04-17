@@ -3,8 +3,6 @@
 
 A simple Digital Ocean (http://digitalocean.com) API wrapper
 
-NOTE: This version is an experimental version not ready for usage.
-
 ## Install
 
 ```
