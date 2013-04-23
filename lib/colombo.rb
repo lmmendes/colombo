@@ -25,6 +25,7 @@ module Colombo
   extend Configuration
 
 
+  # @param [Object] options
   def self.new(options={})
     Client.new(options)
   end

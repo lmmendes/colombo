@@ -7,7 +7,7 @@ require 'minitest/pride'
 require 'vcr'
 
 VCR.configure do |c|
-  c.cassette_library_dir = File.join( File.dirname(__FILE__),  'fixtures/vcr_cassettes')
+  c.cassette_library_dir = File.join( File.dirname(__FILE__),  'fixtures/vcr/cassettes')
   c.hook_into :webmock
 end
 
