@@ -20,8 +20,6 @@ module Colombo
 
     def method_missing(method, *args, &block)
       if method.to_s =~ /^find_by_(.*)/
-        p "found: #{method} - #{$1}"
-        p "args: #{args[0]}"
         run_find_by_attr($1, *args)
       else
         super
