@@ -5,7 +5,7 @@ module Colombo
     attr_accessor :id, :name, :distribution
 
     def destroy(confirm=false)
-      return unless confirm
+      raise 'must pass true for confirm' unless confirm
       @client.request(:get, "/images/#{self.id}/destroy/") do |response|
         return response['event_id']
       end
