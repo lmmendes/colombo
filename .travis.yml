@@ -1,8 +1,12 @@
 language: ruby
 rvm:
-  - 1.8.7
-  - 1.9.2
-  - 1.9.3
-  - 2.0.0
-  - ruby-head
+- 1.8.7
+- 1.9.2
+- 1.9.3
+- 2.0.0
+- ruby-head
 script: bundle exec rake
+env:
+  global:
+  - secure: UONHIMkNeiFe+PXjoDV0p8eTRf94Pw0G+ijp5CcFJ/9JzX7tDUg1MHLI7Q2ycJWBcxojsOdpqceS9U0ZDK5Yx+AqDqAF65/ug4rFU0XLqNOw9dCK18tOKSiNqc7GhpR15yd5w6SQODO9z4Pe50eVNs8KpaaY2r/XnFWjX60DSGQ=
+  - secure: VDOAqNhAO73mL4OVyg65BCIqHC05sTMDfxajO9cMPtfGhdSlNed44Uc5KKtRcVT6xomcCHj0WIaAqjE2pm31kw0EJYxsZJbUR6g83qfK+S6pRQ6Dk7pP3dEEQIlTuP36o94o/gfhBJUwqii345PQBgbrjfI7ys8pjMpE6zqm8ak=
