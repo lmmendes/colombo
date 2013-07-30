@@ -64,7 +64,7 @@ module Colombo
     end
 
     def destroy(confirm=false)
-      return false unless confirm
+      raise 'must pass true for confirm' unless confirm
       @client.request(:get, "/droplets/#{self.id}/destroy/") do |response|
         return response['event_id']
       end
