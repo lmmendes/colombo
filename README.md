@@ -76,7 +76,9 @@ new_droplet = droplets.create({
 
 # This method allows you to destroy an image. There is no way to restore a
 # deleted image so be careful and ensure your data is properly backed up.
-@client.images.find( image_id ).destroy
+# NOTE: You need to pass true to the destroy method to ensure that you know
+# what you are doing.
+@client.images.find( image_id ).destroy(true)
 ```
 
 ### SSH Keys
