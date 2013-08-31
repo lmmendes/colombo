@@ -71,6 +71,9 @@ new_droplet = droplets.create({
 # snapshots or backups that you have created in your own account.
 @client.images
 
+# Takes the optional parameter filter, either :my_images or :global
+@client.images(:filter => :my_images)
+
 # This method displays the attributes of an image.
 @client.images.find(image_id)
 
