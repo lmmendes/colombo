@@ -21,7 +21,6 @@ describe 'Images' do
     end
   end
 
-
   it 'find image via find method' do
     VCR.use_cassette('images') do
       @client.images.find(COLOMBO_IMAGE_ID).wont_be_nil
@@ -31,6 +30,18 @@ describe 'Images' do
   it 'find image via [] operator' do
     VCR.use_cassette('images') do
       @client.images.find(COLOMBO_IMAGE_ID).wont_be_nil
+    end
+  end
+
+  it 'images filtered by my_images' do
+    VCR.use_cassette('images-filter-my_images') do
+      @client.images(:filter => :my_images).wont_be_empty
+    end
+  end
+
+  it 'images filtered by global' do
+    VCR.use_cassette('images-filter-global') do
+      @client.images(:filter => :global).wont_be_empty
     end
   end
 
