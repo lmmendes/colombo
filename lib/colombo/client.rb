@@ -24,8 +24,8 @@ module Colombo
       Regions.new(self)
     end
 
-    def images
-      Images.new(self)
+    def images(options={})
+      Images.new(self, options)
     end
 
     def sizes
