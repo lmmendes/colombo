@@ -76,6 +76,13 @@ module Colombo
       end
     end
 
+    def rename(name)
+      params = { :name => name }
+      @client.request(:get, "/droplets/#{self.id}/rename/", params) do |response|
+        return response['event_id']
+      end
+    end
+
 
   end
 end

@@ -12,5 +12,11 @@ module Colombo
       end
     end
 
+    def transfer(region_id)
+      @client.request(:get, "/images/#{self.id}/transfer/", { :region_id => region_id }) do |response|
+        return response['event_id']
+      end
+    end
+
   end
 end

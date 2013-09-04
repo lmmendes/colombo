@@ -31,11 +31,12 @@ end
 
 ```ruby
 
-# This method returns a specfic droplet (via droplet id) without having to fetch all droplets first
-@client.droplet( droplet_id )
-
 # This method returns all active droplets that are currently running in your account
 @client.droplets()
+
+# This method returns a specfic droplet (via droplet_id)
+# without having to fetch all droplets first
+@client.droplet( droplet_id )
 
 # This method returns full information for a specific droplet ID
 @client.droplets.find( droplet_id )
@@ -60,6 +61,10 @@ new_droplet = droplets.create({
 # The droplet will remain in your account.
 @client.droplets.find( droplet_id ).shutdown()
 
+# This method renames the droplet to the specified name (new_droplet_name).
+@client.droplets.find( droplet_id ).rename( new_droplet_name )
+
+
 ```
 
 ### Regions
@@ -80,6 +85,10 @@ new_droplet = droplets.create({
 
 # This method displays the attributes of an image.
 @client.images.find(image_id)
+
+# This method allows you to transfer an image to a specified region.
+@client.images.find(image_id).transfer( new_region_id )
+
 
 # This method allows you to destroy an image. There is no way to restore a
 # deleted image so be careful and ensure your data is properly backed up.
