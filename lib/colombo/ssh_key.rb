@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 module Colombo
   class SshKey < Resource
 

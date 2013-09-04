@@ -20,7 +20,7 @@ module Colombo
         raise "Required `#{key}` attribute" if not options.include?( key )
       end
 
-      if not options[:ssh_keys].nil?
+      if options[:ssh_keys]
         options[:ssh_keys] = options[:ssh_keys].join(',')
       end
 

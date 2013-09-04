@@ -16,6 +16,10 @@ module Colombo
 
     end
 
+    def droplet(droplet_id)
+      Droplet.find(self, droplet_id)
+    end
+
     def droplets
       Droplets.new(self)
     end

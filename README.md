@@ -30,6 +30,10 @@ end
 ### Droplets
 
 ```ruby
+
+# This method returns a specfic droplet (via droplet id) without having to fetch all droplets first
+@client.droplet( droplet_id )
+
 # This method returns all active droplets that are currently running in your account
 @client.droplets()
 
