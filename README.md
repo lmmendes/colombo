@@ -1,4 +1,4 @@
-# colombo [![Code Climate](https://codeclimate.com/github/lmmendes/colombo.png)](https://codeclimate.com/github/lmmendes/colombo)
+# colombo [![Code Climate](https://codeclimate.com/github/lmmendes/colombo.png)](https://codeclimate.com/github/lmmendes/colombo) [![Dependency Status](https://gemnasium.com/lmmendes/colombo.png)](https://gemnasium.com/lmmendes/colombo)
 
 
 A simple Digital Ocean (http://digitalocean.com) API wrapper
