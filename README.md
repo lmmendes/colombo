@@ -6,7 +6,7 @@ A simple Digital Ocean (http://digitalocean.com) API wrapper
 ## Install
 
 ```
-gem install columbus
+gem install colombo
 ```
 
 ## Examples
