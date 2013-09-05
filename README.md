@@ -126,6 +126,14 @@ ssh_key.destroy
 @client.sizes
 ```
 
+### Events
+```ruby
+# This method is primarily used to report on the progress of an event
+# by providing the percentage of completion.
+@client.event( event_id )
+```
+
+
 
 ## Bug reports and other issues
 

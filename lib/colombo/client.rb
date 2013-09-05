@@ -40,5 +40,9 @@ module Colombo
       SshKeys.new(self)
     end
 
+    def event(event_id)
+      Event.find(self, event_id)
+    end
+
   end
 end

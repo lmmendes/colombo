@@ -19,6 +19,7 @@ require "colombo/images"
 require "colombo/ssh_keys"
 require "colombo/client"
 require "colombo/sizes"
+require "colombo/event"
 
 
 module Colombo
