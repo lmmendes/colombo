@@ -1,3 +1,6 @@
+This project is deprecated, please use DropletKit, the the official DigitalOcean API client for Ruby - https://github.com/digitalocean/droplet_kit
+
+
 # colombo [![Gem Version](https://badge.fury.io/rb/colombo.png)](http://badge.fury.io/rb/colombo) [![Dependency Status](https://gemnasium.com/lmmendes/colombo.png)](https://gemnasium.com/lmmendes/colombo) [![Code Climate](https://codeclimate.com/github/lmmendes/colombo.png)](https://codeclimate.com/github/lmmendes/colombo)
 
 
