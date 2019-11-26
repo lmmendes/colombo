@@ -1,3 +1,5 @@
+* PROJECT DEPRECATED *
+
 This project is deprecated, please use DropletKit, the the official DigitalOcean API client for Ruby - https://github.com/digitalocean/droplet_kit
 
 
